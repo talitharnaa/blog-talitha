@@ -1,0 +1,306 @@
+/* Global Styles */
+* {
+  box-sizing: border-box; /* Menambahkan box-sizing border-box pada semua elemen */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto; /* Memusatkan konten */
+  padding: 0 15px;
+}
+
+/* Menambahkan text-align justify */
+.justify-text {
+  text-align: justify;
+  line-height: 1.6; /* Menjaga jarak antar baris agar nyaman dibaca */
+}
+
+/* Header and Footer */
+header,
+footer {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+header h1,
+footer p {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.card-img-top {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.position-relative {
+  position: relative;
+}
+.blog-category {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0, 123, 255, 0.8); /* biru transparan */
+  color: white;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 50px; /* biar bulat, kayak kapsul */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* bayangan halus */
+  z-index: 10;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Talitha Blog Section */
+section.bg-light {
+  background: linear-gradient(to right, #21447a, #1e3d82); /* Gradasi biru */
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 8px; /* Sudut rounded */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow halus */
+}
+
+section.bg-light h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem; /* Lebih besar untuk kesan tegas */
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Efek bayangan halus */
+}
+
+section.bg-light p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  font-weight: 400;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling button (jika ada tombol call to action) */
+section.bg-light .btn {
+  background-color: #ffffff;
+  color: #1e3d82;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section.bg-light .btn:hover {
+  background-color: #1e3d82;
+  color: white;
+}
+
+/* Centering Article and Sidebar */
+.blog-post,
+.article,
+.recommended-articles,
+.comments,
+.sidebar {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%; /* Ensure the content takes full width available */
+  max-width: 900px; /* Set a max width for readability */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Buttons */
+.btn-dark {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #444;
+}
+
+/* Pagination */
+.pagination a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  margin-right: 5px;
+  border-radius: 5px;
+  background-color: #1e3d82;
+  transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+  background-color: #0d6efd;
+}
+
+.pagination a:focus {
+  outline: none;
+}
+
+/* Comments */
+.comment-form {
+  margin-top: 20px;
+}
+
+.comment-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.comment-form button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+  background-color: #0d6efd;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #f8f8f8;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.list-group-item {
+  border: none;
+  padding: 10px;
+}
+
+.list-group-item a {
+  color: #333;
+  text-decoration: none;
+}
+
+.list-group-item a:hover {
+  text-decoration: underline;
+}
+
+/* footer */
+footer.bg-dark {
+  background: linear-gradient(
+    to right,
+    #21447a,
+    #1e3d82
+  ) !important; /* Pastikan ini diprioritaskan */
+  color: white !important;
+  padding: 40px 20px !important;
+}
+
+footer.bg-dark hr {
+  border-top: 1px solid #ffffff !important; /* Garis horizontal putih */
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+footer.bg-dark p {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 1rem !important;
+  text-align: center !important;
+  margin: 0 !important;
+  font-weight: 400 !important;
+  color: white !important;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.comment-avatar img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.comment-content {
+  max-width: 600px;
+}
+
+.comment-author {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.comment-date {
+  font-weight: normal;
+  font-size: 0.9em;
+  color: #888;
+  margin-left: 8px;
+}
+
+.comment-text {
+  margin: 5px 0 10px;
+}
+
+.comment-reply {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.comment-reply:hover {
+  text-decoration: underline;
+}
+
+img.img-fluid {
+  max-height: 400px; /* Gambar gak lebih tinggi dari 400px */
+  object-fit: cover; /* Supaya gambar tetap rapi */
+}
+
+/* For Responsiveness */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .col-md-8,
+  .col-md-4 {
+    width: 100%;
+  }
+}
